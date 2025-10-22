@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/ExternalCss.css">
+</head>
+
+
+
+
+<body>
+   
+    <div id = "LiaMain">
+         <img id ="lia" src="Anim/Idle/idle.gif"></img>
+    </div>
+
+<script>
+
+    //vars
+        let isAnimated = false;
+        let gifted1 = false;
+        const lia = document.getElementById("lia");
+
+       
+    
+
+        lia.addEventListener("click", () => {
+            if (isAnimated) return;
+
+            isAnimated = true;
+            gifted1 = true;
+           lia.src = "Anim/Poke3/poke.gif";
+            
+            
+            setTimeout(() => {
+                lia.src = "Anim/Idle/idle.gif"
+                isAnimated = false;
+                gifted1 = false
+            }, 9500);
+        });
+
+
+
+
+
+        function giftbutton1() {
+            if (isAnimated) return;{
+            
+            
+                
+                isAnimated = true;
+                lia.src = "Anim/gift1/gift1.gif"       
+            
+            setTimeout(() => {
+                lia.src = "Anim/Idle/idle.gif"
+                isAnimated = false;
+
+            }, 23500);  }
+        }
+
+
+        function wave() {
+            if (isAnimated) return; {
+
+                isAnimated = true;
+                lia.src = "Anim/wave/wave.gif"
+
+            setTimeout(() => {
+                lia.src = "Anim/Idle/idle.gif"
+                isAnimated = false;
+            }, 4000); }
+        }
+
+          function Perfume() {
+            if (isAnimated) return; {
+
+                isAnimated = true;
+                lia.src = "Anim/Perfume/perfume.gif"
+
+            setTimeout(() => {
+                lia.src = "Anim/Idle/idle.gif"
+                isAnimated = false;
+            }, 18000); }
+        }
+
+        function Sleep() {
+            if (isAnimated) return; {
+
+                isAnimated = true;
+                lia.src = "Anim/Sleep/sleep.gif"
+                
+
+            setTimeout(() => {
+                lia.src = "Anim/Sleep/0140.png"
+                isAnimated = false;
+            }, 7000); }
+        }
+    </script>
+
+
+
+
+
+<hr>
+
+
+<div id="buttongui">
+    <table>
+    <tr>
+        <td>
+            <button id= "gift1button1"onclick="giftbutton1()">Happy birthday!</button>
+        </td>
+         <td>
+            <button id= "wave"onclick="wave()">Wave</button>
+        </td>
+        <td>
+            <button id= "perf"onclick="Perfume()">Perfume</button>
+        </td>
+        <td> <button id ="sleep" onclick="Sleep()">Sleep</button></td>
+    </tr>
+    <tr>
+       
+    </tr>
+</table>
+</div>
+
+</body>
+</html>
