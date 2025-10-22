@@ -1,0 +1,37 @@
+#LiaMain {
+   margin: auto;
+   width: 960px;
+   height: 720x;
+   text-align: center;
+   background-color: grey;
+}
+
+
+
+#LiaMain img {
+   
+   width: 1280;
+   height: 720;
+
+
+}
+
+#buttongui {
+   margin: auto;
+   text-align: center;
+   width: 960px;
+   height: 300px;
+   border: 5px solid rgb(36, 36, 70);
+}
+
+
+#buttongui table tr td button{
+   font-size: 30px;
+}
+
+
+#gift1button1 {
+   border: 5px solid gold;
+   background-color: yellow;
+   border-radius: 30px;
+}
